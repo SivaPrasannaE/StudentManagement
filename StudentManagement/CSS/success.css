@@ -1,0 +1,67 @@
+body {
+    background: linear-gradient(135deg, #6d5bba, #8d58bf, #de67a3, #f58477);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.card .btn-primary {
+    background-color: #6d5bba;
+    border-color: #6d5bba;
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.card .btn-primary:hover {
+    background-color: #58489e;
+    border-color: #58489e;
+}
+
+.card .btn-secondary {
+    background-color: #de67a3;
+    border-color: #de67a3;
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.card .btn-secondary:hover {
+    background-color: #bf4a89;
+    border-color: #bf4a89;
+}
+
+.animation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.student-animation {
+    animation: moveStudent 3s infinite;
+}
+
+@keyframes moveStudent {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100px); }
+    100% { transform: translateX(0); }
+}
